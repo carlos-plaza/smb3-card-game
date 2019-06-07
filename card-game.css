@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  background: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.grid-container {
+  min-width: 500px;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  padding: 50px;
+  border: solid 20px transparent;
+  border-image-source: repeating-linear-gradient(135deg, red 0% 2%, white 2% 4%);
+  border-image-slice: 1 2 3 4;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 50px;
+}
+
+.card {
+  background: white;
+  color: black;
+  font-size: 4rem;
+  width: 75px;
+  height: 105px;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
